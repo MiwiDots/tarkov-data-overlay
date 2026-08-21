@@ -18,7 +18,7 @@
   //
   // Every entry carries the English source it replaces, so a reviewer can
   // judge the translation without looking anything up, and so
-  // `npm run check-overrides` can flag it once tarkov.dev fixes it itself.
+  // `npm run check-overrides` can flag it once upstream fixes it itself.
 
   tasks: {
     // Burning Rubber / Heiße Reifen
@@ -63,6 +63,25 @@
         // EN: Eliminate Sniper Scavs with a bolt-action rifle
         '5bc483ba86f77415034ba8d0': {
           description: 'Eliminiere Scav-Scharfschützen mit einem Repetiergewehr',
+        },
+      },
+    },
+
+    // Glory to CPSU (Lv 6) / Glory to CPSU
+    // One objective of this task has a German entry, the neighbouring one does
+    // not — the German bundle resolves per string, so a single missing entry
+    // leaves one line English while the rest of the task reads German.
+    // Wording mirrors the sibling objective that IS translated
+    // ("Finde den Arbeitsplatz von Prapors Freund in Streets of Tarkov").
+    //
+    // The task name itself is deliberately left alone: upstream established
+    // that BSG dropped the "- Part 1" suffix, so two tasks legitimately share
+    // the name "Glory to CPSU" (see src/overrides/tasks.json5).
+    '64f5aac4b63b74469b6c14c2': {
+      objectives: {
+        // EN: Locate the apartment of Prapor's friend on Streets of Tarkov
+        '6a26943d55478d73e6b4fadf': {
+          description: 'Finde die Wohnung von Prapors Freund in Streets of Tarkov',
         },
       },
     },
