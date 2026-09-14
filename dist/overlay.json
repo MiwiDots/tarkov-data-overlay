@@ -9237,6 +9237,156 @@
               "description": "Finde und eliminiere den Trupp von The Wedge"
             }
           }
+        },
+        "66058cb22cee99303f1ba067": {
+          "objectives": {
+            "6606b709f7ce34bb26221cab": {
+              "description": "Platziere das Arena-Werbeplakat in den Wohnquartieren der Scavbasis in Customs"
+            }
+          }
+        },
+        "6834145ebc1f443d7603c8a7": {
+          "name": "Leicht verdientes Geld - Teil 1 [PVE ZONE]",
+          "objectives": {
+            "6834145ebc1f443d7603c8ab": {
+              "description": "Platziere das Arena-Werbeplakat in den Wohnquartieren der Scavbasis in Customs"
+            }
+          }
+        },
+        "6834158f2f0e2a7eb90b62c8": {
+          "name": "Leicht verdientes Geld - Teil 2 [PVE ZONE]",
+          "objectives": {
+            "6834158f2f0e2a7eb90b62cc": {
+              "description": "Übergib im Raid gefundene Gegenstände aus der Lebensmittel-Kategorie"
+            }
+          }
+        },
+        "68341846186efa3c5b07f989": {
+          "name": "Balancing - Teil 1 [PVE ZONE]"
+        },
+        "68341a0b2f0e2a7eb90b62d4": {
+          "name": "Balancing - Teil 2 [PVE ZONE]"
+        },
+        "68341b407559f4e6d50bc0ce": {
+          "name": "Überraschung [PVE ZONE]"
+        },
+        "68341c4babec72d95d0c1260": {
+          "name": "Ablenkungsmanöver - Teil 1 [PVE ZONE]"
+        },
+        "68341d7d7559f4e6d50bc0db": {
+          "name": "Ablenkungsmanöver - Teil 2 [PVE ZONE]"
+        },
+        "68341eb25619c8e2a9031501": {
+          "name": "Auf zu großen Höhen! - Teil 1 [PVE ZONE]"
+        },
+        "68341f6fe2e7ef70a3060a0a": {
+          "name": "Auf zu großen Höhen! - Teil 2 [PVE ZONE]"
+        },
+        "6834202a186efa3c5b07f9a2": {
+          "name": "Auf zu großen Höhen! - Teil 3 [PVE ZONE]",
+          "objectives": {
+            "6834202a186efa3c5b07f9a5": {
+              "description": "Gewinne 2 Matches und erreiche dabei mindestens den 3. Platz im TeamFight-, BlastGang- oder CheckPoint-Modus in Arena"
+            }
+          }
+        },
+        "683421515619c8e2a9031511": {
+          "name": "Auf zu großen Höhen! - Teil 4 [PVE ZONE]",
+          "objectives": {
+            "683421515619c8e2a9031514": {
+              "description": "Übergebe Rubel aus deinem EFT-Versteck"
+            }
+          }
+        },
+        "68342265a8d674b5740b31f0": {
+          "name": "Auf zu großen Höhen! - Teil 5 [PVE ZONE]",
+          "objectives": {
+            "6978a3305f21afb01d7e0c53": {
+              "description": "Gewinne ein Match und erreiche dabei mindestens den 2. Platz im Team im TeamFight-, BlastGang- oder CheckPoint-Modus"
+            }
+          }
+        },
+        "6834233fecd5cf3a440d855b": {
+          "name": "Entgegen jeglichen Gewissens - Teil 1 [PVE ZONE]",
+          "objectives": {
+            "6834233fecd5cf3a440d8561": {
+              "description": "Finde heraus, was mit dem Champion passiert ist"
+            },
+            "6834233fecd5cf3a440d8564": {
+              "description": "Überlebe und entkomme aus dem Bereich"
+            }
+          }
+        },
+        "68342446a8d674b5740b31fc": {
+          "name": "Entgegen jeglichen Gewissens - Teil 2 [PVE ZONE]"
+        },
+        "6834254f2f0e2a7eb90b62ef": {
+          "name": "Entscheidungen, Entscheidungen [PVE ZONE]",
+          "objectives": {
+            "6834254f2f0e2a7eb90b62f2": {
+              "description": "Übergib die gefundenen Informationen"
+            }
+          }
+        },
+        "683425dd8f5b18d29a05d9d1": {
+          "name": "Zwischen Zwei Feuern [PVE ZONE]",
+          "objectives": {
+            "683425dd8f5b18d29a05d9d4": {
+              "description": "Kehre zum Versteck des alten Champions auf Customs zurück"
+            },
+            "683425dd8f5b18d29a05d9d6": {
+              "description": "Finde kompromittierende Informationen über Ref"
+            },
+            "683425dd8f5b18d29a05d9d8": {
+              "description": "Übergib die gefundenen Informationen"
+            }
+          }
+        },
+        "69788d4e963f08d9140bce19": {
+          "name": "Professionelle Fitness - Teil 1 [PVE ZONE]",
+          "objectives": {
+            "69788d4e963f08d9140bce1c": {
+              "description": "Spiele ein Match im CheckPoint- oder Last Hero-Modus"
+            }
+          }
+        },
+        "697878057aa1273126030fb0": {
+          "name": "Arena-Geschäfte [PVE ZONE]",
+          "objectives": {
+            "69789903c30426685c9f3080": {
+              "description": "Schließe die Aufgabe Professionelle Fitness - Teil 2 ab"
+            },
+            "6978990cbe971818240c2d7f": {
+              "description": "Schließe die Aufgabe Auf zu großen Höhen! - Teil 6 ab"
+            },
+            "697899167ed646e5d6187fea": {
+              "description": "Schließe die Aufgabe Halte die Führung ab"
+            }
+          }
+        },
+        "69789660b2187365e70bb94a": {
+          "name": "Halte die Führung [PVE ZONE]",
+          "objectives": {
+            "69789660b2187365e70bb94d": {
+              "description": "Eliminiere Gegner in Arena"
+            }
+          }
+        },
+        "6978907718bd6d7cbd0e8b8e": {
+          "name": "Professionelle Fitness - Teil 2 [PVE ZONE]",
+          "objectives": {
+            "6978907718bd6d7cbd0e8b91": {
+              "description": "Eliminiere Gegner in Arena"
+            }
+          }
+        },
+        "697895277d31587eab080266": {
+          "name": "Auf zu großen Höhen! - Teil 6 [PVE ZONE]",
+          "objectives": {
+            "6978a2bc18130b67d9156d7a": {
+              "description": "Gewinne zwei Matches in Folge im TeamFight-, BlastGang- oder CheckPoint-Modus in Arena"
+            }
+          }
         }
       },
       "storyChapters": {
@@ -9275,7 +9425,7 @@
   },
   "$meta": {
     "version": "1.92",
-    "generated": "2026-09-14T06:29:51.789Z",
-    "sha256": "23291e23ef57e052c45ab2b7b221d896565ea31b85fcc318fdb6792cebeed93f"
+    "generated": "2026-09-14T07:14:42.323Z",
+    "sha256": "a4683cb6c63bcc8569c34b5d3c5a83c153d5aaba18af8d77178e4a60c3a407df"
   }
 }
