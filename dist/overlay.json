@@ -8697,6 +8697,7 @@
           }
         },
         "6a5ccda873f06065630d61b0": {
+          "name": "Geheime Nachricht",
           "objectives": {
             "6a5ccda873f06065630d61b2": {
               "description": "Eliminiere ein beliebiges Ziel mit Kopfschüssen, während du eine 12ga-Schrotflinte auf Streets of Tarkov benutzt"
@@ -9094,6 +9095,164 @@
               "description": "Eliminiere PMCs auf Factory zur Tageszeit"
             }
           }
+        },
+        "673f4e956f1b89c7bc0f56ef": {
+          "objectives": {
+            "673f5065cdfe082966842575": {
+              "description": "Schließe das Hauptziel so schnell wie möglich ab"
+            }
+          }
+        },
+        "6a5cd2178fd7c2b201032f3f": {
+          "name": "Vorführmodell",
+          "objectives": {
+            "6a5cd2178fd7c2b201032f41": {
+              "description": "Eliminiere ein beliebiges Ziel mit Kopfschüssen, während du 7,62x51-Sturmgewehre oder Präzisionsgewehre auf Reserve benutzt"
+            }
+          }
+        },
+        "5ede55112c95834b583f052a": {
+          "name": "Der Bunker",
+          "objectives": {
+            "6a5f419a91369c05ae763827": {
+              "description": "Lokalisiere die hermetische Tür, die zum Krankenhaus führt (Weißer Läufer)"
+            },
+            "6a5f419cca7ba5dbb6dfec49": {
+              "description": "Lokalisiere eine der beiden hermetischen Türen, die zum Gebäude der Akademie führen (Schwarzer Läufer)"
+            },
+            "6a5f419eae9bbeb8ca0c46d0": {
+              "description": "Lokalisiere eine der beiden hermetischen Türen, die zur Baracke #1 führen (Schwarzer Bauer)"
+            },
+            "6a5f41a021f78bafb63c3d47": {
+              "description": "Lokalisiere eine der beiden hermetischen Türen, die zur Baracke #2 führen (Weißer Bauer)"
+            },
+            "6a5f41bf54a91e0d977db806": {
+              "description": "Lokalisiere die hermetische Tür, die zum Gebäude des Luftkontrollzentrums führt (König)"
+            }
+          }
+        },
+        "6a5c1578f2689567c30eb0f3": {
+          "name": "Wandern"
+        },
+        "59ca1a6286f774509a270942": {
+          "objectives": {
+            "6a5f44d815430d6a5b5161b1": {
+              "description": "Eliminiere ein beliebiges Ziel mit einem GP-25-Granatwerfer"
+            }
+          }
+        },
+        "61958c366726521dd96828ec": {
+          "objectives": {
+            "6a5cd57d36c4fb654692787c": {
+              "description": "Eliminiere ein beliebiges Ziel mit einem M203-Granatwerfer auf Lighthouse oder Reserve"
+            }
+          }
+        },
+        "5a27bc8586f7741b543d8ea4": {
+          "objectives": {
+            "6a5dea83a4dd339f77be89eb": {
+              "description": "Eliminiere ein beliebiges Ziel mit einem beliebigen 7,62x51-Präzisionsgewehr aus über 50 Meter Entfernung auf Shoreline oder Lighthouse"
+            }
+          }
+        },
+        "5c0d4e61d09282029f53920e": {
+          "objectives": {
+            "6a5cdc97790159682d2bc19e": {
+              "description": "Eliminiere ein beliebiges Ziel"
+            }
+          }
+        },
+        "5a03296886f774569778596a": {
+          "objectives": {
+            "6a5cd11e5cf929b0f5d76816": {
+              "description": "Übergib den im Raid gefundenen Gegenstand: Metall-Kraftstofftank oder Kraftstoffbehälter für Expeditionen"
+            }
+          }
+        },
+        "6179aff8f57fb279792c60a1": {
+          "objectives": {
+            "6a5cd4d03a5504087ed636d3": {
+              "description": "Übergib den im Raid gefundenen Gegenstand: Topographische Übersichtskarten, Ordner mit Informationen oder TerraGroups „Blaue Ordner“"
+            }
+          }
+        },
+        "5edab4b1218d181e29451435": {
+          "objectives": {
+            "6a5ffd702c6091f279537d66": {
+              "description": "Übergib die im Raid gefundene Tasche von Sanitar"
+            }
+          }
+        },
+        "5a27bafb86f7741c73584017": {
+          "objectives": {
+            "6a5c10e883a51e292d11b976": {
+              "description": "Verstaue einen Wellschlauch im Labor in Customs"
+            }
+          }
+        },
+        "5a27bb3d86f77411ea361a21": {
+          "objectives": {
+            "6a5cd1942858d1ede4317068": {
+              "description": "Lokalisiere die versteckte TerraGroup-Fracht im Resort auf Shoreline"
+            }
+          }
+        },
+        "5a27bc1586f7741f6d40fa2f": {
+          "objectives": {
+            "6a5de9b9fee6abb95244f018": {
+              "description": "Markiere Artyoms Auto mit einem MS2000 Marker"
+            }
+          }
+        },
+        "626bdcc3a371ee3a7a3514c5": {
+          "objectives": {
+            "626c317e05f287031503c7fd": {
+              "description": "Finde und eliminiere Knight (in einem Raid)"
+            },
+            "626c318147ea7f506e5493c7": {
+              "description": "Finde und eliminiere Big Pipe (in einem Raid)"
+            },
+            "626c3183af14a41d9a1f4ea7": {
+              "description": "Finde und eliminiere Birdeye (in einem Raid)"
+            }
+          }
+        },
+        "5d25e2c386f77443e7549029": {
+          "objectives": {
+            "5d26fd8886f77469f0445745": {
+              "description": "Finde und eliminiere Reshala"
+            }
+          }
+        },
+        "60e71c11d54b755a3b53eb65": {
+          "objectives": {
+            "6a5abd63b45ef5b1a87b8273": {
+              "description": "Finde und eliminiere die vermummten Männer"
+            }
+          }
+        },
+        "69ce1cfb298a6529b30d712b": {
+          "objectives": {
+            "69ce1cfb298a6529b30d712d": {
+              "description": "Finde und eliminiere den Trupp von The Wedge"
+            }
+          }
+        }
+      },
+      "storyChapters": {
+        "accidental-witness": {
+          "objectives": {
+            "68f3c51a829dc8fbee1f3651": {
+              "description": "Finde und eliminiere Reshala"
+            }
+          }
+        },
+        "they-are-already-here": {
+          "objectives": {
+            "68589307a77e480f775134e1": {
+              "description": "Finde und eliminiere den Kultisten-Priester"
+            }
+          }
         }
       }
     },
@@ -9116,7 +9275,7 @@
   },
   "$meta": {
     "version": "1.92",
-    "generated": "2026-09-10T10:52:41.280Z",
-    "sha256": "8c80102e9f0e1e731cc7030e4eddc3ac5ff43e6cc6b59f5e5feff8e05626c368"
+    "generated": "2026-09-14T06:29:51.789Z",
+    "sha256": "23291e23ef57e052c45ab2b7b221d896565ea31b85fcc318fdb6792cebeed93f"
   }
 }
