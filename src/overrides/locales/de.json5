@@ -1,7 +1,38 @@
 {
-  // German locale task/objective corrections from tarkov.dev bundle.
-  // Patches missing or incorrect German strings in the German locale.
-  // Each entry includes proof link and explains the correction type.
+  // German (de) locale corrections.
+  //
+  // These patch strings that are wrong or missing in tarkov.dev's German
+  // translation bundle (regular/tasks_de). They are NOT data corrections:
+  // a regular override in src/overrides/tasks.json5 says "the canonical
+  // value is X regardless of locale", while an entry here says "the German
+  // bundle should read X". Consumers apply these only when rendering German,
+  // after the locale-neutral data overrides.
+  //
+  // Terminology follows the strings tarkov.dev already translates well, so
+  // these additions do not stand out:
+  //   "PMC operatives"    -> "PMCs"
+  //   "bolt-action rifle" -> "Repetiergewehr"
+  //   "Sniper Scavs"      -> "Scav-Scharfschützen"
+  //   "body armor"        -> "Körperschutz"
+  //   "Eliminate ..."     -> "Eliminiere ..."
+  //   "figurine"          -> "-Figur"
+  //   "equipment/gear"    -> "Ausrüstung"
+  //   "Fatigue"           -> "Erschöpfung"
+  //   "Survive and extract from X" -> "Überlebe und entkomme aus X"
+  //   "Win a match in X mode in Arena" -> "Gewinne ein Match im X-Modus in Arena"
+  //   "daytime Factory"   -> "Factory zur Tageszeit"
+  //
+  // Some of these entries are not plain German-missing gaps: the German
+  // bundle can hold an OLDER English string that upstream has since reworded
+  // (stale-English drift), a single wrong letter (casing), or — for the
+  // "New Beginning" prestige tasks — a swapped language field where the
+  // German bundle resolves to English while the English bundle resolves to
+  // German (see src/overrides/locales/en.json5 for the mirrored fix). Each
+  // affected block below explains which of these applies.
+  //
+  // Every entry carries the English source it replaces, so a reviewer can
+  // judge the translation without looking anything up, and so
+  // `npm run check-overrides` can flag it once tarkov.dev fixes it itself.
 
   tasks: {
     // Burning Rubber / Heiße Reifen
@@ -33,6 +64,12 @@
 
     // The Tarkov Shooter - Part 5 / Der Tarkov Schütze – Teil 5
     // Both the task name and its objective were left in English.
+    //
+    // NOTE for reviewers: task 5bc4826c86f774106d22d88b carries the same
+    // English name ("The Tarkov Shooter - Part 5"). That duplicate exists in
+    // the upstream data itself and is a separate, locale-independent question
+    // — not something this file should paper over. Translating the name here
+    // simply mirrors the English as-is.
     // Proof: https://json.tarkov.dev/regular/tasks_de (5bc4836986f7740c0152911c)
     '5bc4836986f7740c0152911c': {
       // EN: The Tarkov Shooter - Part 5
@@ -334,6 +371,21 @@
     },
 
     // New Beginning (Prestige 2, 3, 4) / Neuanfang
+    //
+    // Two distinct problems collapse into these three tasks:
+    //
+    // 1. Swapped language fields: the German bundle currently resolves these
+    //    task names to the English string "New Beginning" instead of
+    //    "Neuanfang". src/overrides/locales/en.json5 already fixes the
+    //    mirror-image bug on the English side (that bundle resolves to the
+    //    German "Neuanfang"). See that file's header for the full context and
+    //    proof link (https://json.tarkov.dev/regular/tasks_en).
+    //
+    // 2. Stale English in the figurine handover objectives: the German
+    //    bundle held an OLDER English phrasing of these objectives. Upstream
+    //    has since reworded the English side to "any ... figurine"; the
+    //    German bundle never picked up either the translation or the reword,
+    //    so it still reads plain English throughout.
     //    Proof: https://json.tarkov.dev/regular/tasks_en
     //
     // Terminology: "figurine" -> "-Figur", matching the existing translated
