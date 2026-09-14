@@ -1,38 +1,7 @@
 {
-  // German (de) locale corrections.
-  //
-  // These patch strings that are wrong or missing in tarkov.dev's German
-  // translation bundle (regular/tasks_de). They are NOT data corrections:
-  // a regular override in src/overrides/tasks.json5 says "the canonical
-  // value is X regardless of locale", while an entry here says "the German
-  // bundle should read X". Consumers apply these only when rendering German,
-  // after the locale-neutral data overrides.
-  //
-  // Terminology follows the strings tarkov.dev already translates well, so
-  // these additions do not stand out:
-  //   "PMC operatives"    -> "PMCs"
-  //   "bolt-action rifle" -> "Repetiergewehr"
-  //   "Sniper Scavs"      -> "Scav-Scharfschützen"
-  //   "body armor"        -> "Körperschutz"
-  //   "Eliminate ..."     -> "Eliminiere ..."
-  //   "figurine"          -> "-Figur"
-  //   "equipment/gear"    -> "Ausrüstung"
-  //   "Fatigue"           -> "Erschöpfung"
-  //   "Survive and extract from X" -> "Überlebe und entkomme aus X"
-  //   "Win a match in X mode in Arena" -> "Gewinne ein Match im X-Modus in Arena"
-  //   "daytime Factory"   -> "Factory zur Tageszeit"
-  //
-  // Some of these entries are not plain German-missing gaps: the German
-  // bundle can hold an OLDER English string that upstream has since reworded
-  // (stale-English drift), a single wrong letter (casing), or — for the
-  // "New Beginning" prestige tasks — a swapped language field where the
-  // German bundle resolves to English while the English bundle resolves to
-  // German (see src/overrides/locales/en.json5 for the mirrored fix). Each
-  // affected block below explains which of these applies.
-  //
-  // Every entry carries the English source it replaces, so a reviewer can
-  // judge the translation without looking anything up, and so
-  // `npm run check-overrides` can flag it once tarkov.dev fixes it itself.
+  // German locale task/objective corrections from tarkov.dev bundle.
+  // Patches missing or incorrect German strings in the German locale.
+  // Each entry includes proof link and explains the correction type.
 
   tasks: {
     // Burning Rubber / Heiße Reifen
@@ -64,12 +33,6 @@
 
     // The Tarkov Shooter - Part 5 / Der Tarkov Schütze – Teil 5
     // Both the task name and its objective were left in English.
-    //
-    // NOTE for reviewers: task 5bc4826c86f774106d22d88b carries the same
-    // English name ("The Tarkov Shooter - Part 5"). That duplicate exists in
-    // the upstream data itself and is a separate, locale-independent question
-    // — not something this file should paper over. Translating the name here
-    // simply mirrors the English as-is.
     // Proof: https://json.tarkov.dev/regular/tasks_de (5bc4836986f7740c0152911c)
     '5bc4836986f7740c0152911c': {
       // EN: The Tarkov Shooter - Part 5
@@ -309,9 +272,11 @@
     },
 
     // Secret Message / Geheime Nachricht
-    // Objective was left in English in the German bundle.
+    // Name and objective were both left in English in the German bundle.
     // Proof: https://json.tarkov.dev/regular/tasks_de (6a5ccda873f06065630d61b0)
     '6a5ccda873f06065630d61b0': {
+      // Was: Secret Message
+      name: 'Geheime Nachricht',
       objectives: {
         // Was: Eliminate any target with headshots using a 12ga shotgun on Streets of Tarkov
         '6a5ccda873f06065630d61b2': {
@@ -369,21 +334,6 @@
     },
 
     // New Beginning (Prestige 2, 3, 4) / Neuanfang
-    //
-    // Two distinct problems collapse into these three tasks:
-    //
-    // 1. Swapped language fields: the German bundle currently resolves these
-    //    task names to the English string "New Beginning" instead of
-    //    "Neuanfang". src/overrides/locales/en.json5 already fixes the
-    //    mirror-image bug on the English side (that bundle resolves to the
-    //    German "Neuanfang"). See that file's header for the full context and
-    //    proof link (https://json.tarkov.dev/regular/tasks_en).
-    //
-    // 2. Stale English in the figurine handover objectives: the German
-    //    bundle held an OLDER English phrasing of these objectives. Upstream
-    //    has since reworded the English side to "any ... figurine"; the
-    //    German bundle never picked up either the translation or the reword,
-    //    so it still reads plain English throughout.
     //    Proof: https://json.tarkov.dev/regular/tasks_en
     //
     // Terminology: "figurine" -> "-Figur", matching the existing translated
@@ -921,6 +871,354 @@
         // Was: Eliminate PMC operatives on daytime Factory
         '60ec07bcd7b7cb55e94c1760': {
           description: 'Eliminiere PMCs auf Factory zur Tageszeit',
+        },
+      },
+    },
+
+    // Hot Wheels (BTR-Fahrer)
+    //
+    // Only the optional objective is English; the required one next to it
+    // reads German, which is what makes the task look half-translated. The
+    // bundle resolves per string, so one missing entry is enough.
+    //
+    // No attested source for this wording: the bundle has no "main objective"
+    // and no "as soon as possible" anywhere. "Schliesse ... ab" follows the
+    // attested "Complete the task X" -> "Schliesse die Aufgabe X ab"; the rest
+    // is composed. Good German is the standard here, BSG wording is only a
+    // hint, not an authority - a later BSG translation does not automatically
+    // replace this entry, it only invites a comparison.
+    // Proof: https://json.tarkov.dev/regular/tasks_de (673f4e956f1b89c7bc0f56ef)
+    '673f4e956f1b89c7bc0f56ef': {
+      objectives: {
+        // Was: Complete the main objective as soon as possible
+        '673f5065cdfe082966842575': {
+          description: 'Schließe das Hauptziel so schnell wie möglich ab',
+        },
+      },
+    },
+
+    // Demonstration Model
+    //
+    // Not a missing translation - BSG's own German bundle serves the English
+    // string as the German value for this task's name. Only the name exists
+    // for this task in the bundle; there is no description or objective text
+    // to compare against.
+    //
+    // Chosen for readable German: "Vorführmodell" is the idiomatic term for a
+    // demonstration/display unit. BSG has no German rendering for this name,
+    // so there is nothing to compare against - but note that BSG wording is a
+    // hint here, not the standard. This entry stands on its own; a later BSG
+    // translation does not automatically replace it, it only invites a
+    // comparison.
+    // Proof: https://json.tarkov.dev/regular/tasks_de (6a5cd2178fd7c2b201032f3f)
+    //
+    // Objective was left in English in the German bundle.
+    // Proof: https://json.tarkov.dev/regular/tasks_de (6a5cd2178fd7c2b201032f41)
+    '6a5cd2178fd7c2b201032f3f': {
+      // Was: Demonstration Model
+      name: 'Vorführmodell',
+      objectives: {
+        // EN: Eliminate any target with headshots with 7.62x51 assault rifles or DMRs on Reserve
+        '6a5cd2178fd7c2b201032f41': {
+          description: 'Eliminiere ein beliebiges Ziel mit Kopfschüssen, während du 7,62x51-Sturmgewehre oder Präzisionsgewehre auf Reserve benutzt',
+        },
+      },
+    },
+
+    // The Bunker
+    //
+    // Not a missing translation - BSG's own German bundle serves the English
+    // string as the German value for this task's name. Only the name exists
+    // for this task in the bundle; there is no description or objective text
+    // to compare against.
+    //
+    // "Der Bunker" is the plain, idiomatic German rendering of "The Bunker"
+    // and is chosen on that basis. It additionally lines up with BSG's own
+    // translation of the sibling task "The Bunker - Part 2"
+    // (5ede567cfa6dc072ce15d6e3), which the same bundle renders as
+    // "Der Bunker – Teil 2" — a confirming data point, not the reason for
+    // the choice. (That sibling uses an en dash "–"; this task has no part
+    // suffix, so the dash does not apply here.)
+    //
+    // This entry is deliberate, not a placeholder: it does not defer to a
+    // future BSG string. If BSG later ships its own German name for this
+    // task, that is cause to compare it against this entry, not to
+    // automatically replace this entry with it.
+    // Proof: https://json.tarkov.dev/regular/tasks_de (5ede55112c95834b583f052a)
+    //
+    // Five objectives of this task are English in the German bundle. Not
+    // missing German: BSG recreated these five objectives under NEW ids and
+    // the old ids still hold the German text, which the new ids never
+    // inherited (old -> new): 5ee8ec5ed72d953f5d2aabd1 -> 6a5f419a91369c05ae763827,
+    // 5ee8ecd75eb3205dae135d17 -> 6a5f419cca7ba5dbb6dfec49,
+    // 5ee8ed18d72d953f5d2aabd4 -> 6a5f419eae9bbeb8ca0c46d0,
+    // 5ee8eddde932d53763761b2c -> 6a5f41a021f78bafb63c3d47,
+    // 5ee8edf1500391756d7498a7 -> 6a5f41bf54a91e0d977db806.
+    //
+    // BSG's old wording is not copied verbatim: it has two grammar errors -
+    // "eine der zwei hermetische Türen" (wrong declension, should be
+    // "hermetischen") and "... Türen, welche zur Baracke #1 führt" (number
+    // mismatch, "Türen" needs "führen"). "welche" is also replaced by "die"
+    // for a more natural read. "Hermetische Tür" itself is kept as-is - it
+    // has five attested hits in the German bundle, while "Drucktür",
+    // "Schleuse" and "Sicherheitstür" have none.
+    // Proof: https://json.tarkov.dev/regular/tasks_de
+    '5ede55112c95834b583f052a': {
+      // Was: The Bunker
+      name: 'Der Bunker',
+      objectives: {
+        // EN: Locate the hermetic door leading to the hospital (White Bishop) on Reserve
+        '6a5f419a91369c05ae763827': {
+          description: 'Lokalisiere die hermetische Tür, die zum Krankenhaus führt (Weißer Läufer)',
+        },
+        // EN: Locate one of the two hermetic doors leading to the academy building (Black Bishop) on Reserve
+        '6a5f419cca7ba5dbb6dfec49': {
+          description: 'Lokalisiere eine der beiden hermetischen Türen, die zum Gebäude der Akademie führen (Schwarzer Läufer)',
+        },
+        // EN: Locate one of the two hermetic doors leading to barracks #1 (Black Pawn) on Reserve
+        '6a5f419eae9bbeb8ca0c46d0': {
+          description: 'Lokalisiere eine der beiden hermetischen Türen, die zur Baracke #1 führen (Schwarzer Bauer)',
+        },
+        // EN: Locate one of the two hermetic doors leading to barracks #2 (White Pawn) on Reserve
+        '6a5f41a021f78bafb63c3d47': {
+          description: 'Lokalisiere eine der beiden hermetischen Türen, die zur Baracke #2 führen (Weißer Bauer)',
+        },
+        // EN: Locate the hermetic door leading to the air control center building (King) on Reserve
+        '6a5f41bf54a91e0d977db806': {
+          description: 'Lokalisiere die hermetische Tür, die zum Gebäude des Luftkontrollzentrums führt (König)',
+        },
+      },
+    },
+
+    // Hiking
+    // Name was left in English in the German bundle.
+    // Proof: https://json.tarkov.dev/regular/tasks_de (6a5c1578f2689567c30eb0f3)
+    '6a5c1578f2689567c30eb0f3': {
+      // Was: Hiking
+      name: 'Wandern',
+    },
+
+    // Ironclad Proof
+    // Objective was left in English in the German bundle.
+    // Proof: https://json.tarkov.dev/regular/tasks_de (59ca1a6286f774509a270942)
+    '59ca1a6286f774509a270942': {
+      objectives: {
+        // EN: Eliminate any target with a GP-25 grenade launcher
+        '6a5f44d815430d6a5b5161b1': {
+          description: 'Eliminiere ein beliebiges Ziel mit einem GP-25-Granatwerfer',
+        },
+      },
+    },
+
+    // Gifts from Tarkov
+    // Objective was left in English in the German bundle.
+    // Proof: https://json.tarkov.dev/regular/tasks_de (61958c366726521dd96828ec)
+    '61958c366726521dd96828ec': {
+      objectives: {
+        // EN: Eliminate any target with an M203 grenade launcher on Lighthouse or Reserve
+        '6a5cd57d36c4fb654692787c': {
+          description: 'Eliminiere ein beliebiges Ziel mit einem M203-Granatwerfer auf Lighthouse oder Reserve',
+        },
+      },
+    },
+
+    // Feuchte Angelegenheit – Teil 6 / Wet Job - Part 6
+    // Objective was left in English in the German bundle.
+    // Proof: https://json.tarkov.dev/regular/tasks_de (5a27bc8586f7741b543d8ea4)
+    '5a27bc8586f7741b543d8ea4': {
+      objectives: {
+        // EN: Eliminate any target with any 7.62x51 DMR from over 50 meters away on Shoreline or Lighthouse
+        '6a5dea83a4dd339f77be89eb': {
+          description: 'Eliminiere ein beliebiges Ziel mit einem beliebigen 7,62x51-Präzisionsgewehr aus über 50 Meter Entfernung auf Shoreline oder Lighthouse',
+        },
+      },
+    },
+
+    // Der Fremdenführer / The Guide
+    // Objective was left in English in the German bundle.
+    // Proof: https://json.tarkov.dev/regular/tasks_de (5c0d4e61d09282029f53920e)
+    '5c0d4e61d09282029f53920e': {
+      objectives: {
+        // EN: Eliminate any target
+        '6a5cdc97790159682d2bc19e': {
+          description: 'Eliminiere ein beliebiges Ziel',
+        },
+      },
+    },
+
+    // I Need More Power
+    // Objective was left in English in the German bundle.
+    // Proof: https://json.tarkov.dev/regular/tasks_de (5a03296886f774569778596a)
+    '5a03296886f774569778596a': {
+      objectives: {
+        // EN: Hand over the found in raid item: Metal fuel tank or Expeditionary fuel tank
+        '6a5cd11e5cf929b0f5d76816': {
+          description: 'Übergib den im Raid gefundenen Gegenstand: Metall-Kraftstofftank oder Kraftstoffbehälter für Expeditionen',
+        },
+      },
+    },
+
+    // Überbevölkerung / Overpopulation
+    // Objective was left in English in the German bundle.
+    // Proof: https://json.tarkov.dev/regular/tasks_de (6179aff8f57fb279792c60a1)
+    '6179aff8f57fb279792c60a1': {
+      objectives: {
+        // EN: Hand over the found in raid item: Topographic survey maps, Intelligence folder, or TerraGroup "Blue Folders" materials
+        '6a5cd4d03a5504087ed636d3': {
+          description: 'Übergib den im Raid gefundenen Gegenstand: Topographische Übersichtskarten, Ordner mit Informationen oder TerraGroups „Blaue Ordner“',
+        },
+      },
+    },
+
+    // Pfad des Jägers - Sadist / The Huntsman Path - Sadist
+    // Objective was left in English in the German bundle. "Sanitar's bag" has
+    // no item translation to compare against; a definite article plus a
+    // preposed genitive possessive don't coexist in German, so the
+    // possessive is resolved into a "von" construction instead.
+    // Proof: https://json.tarkov.dev/regular/tasks_de (5edab4b1218d181e29451435)
+    '5edab4b1218d181e29451435': {
+      objectives: {
+        // EN: Hand over the found in raid Sanitar's bag
+        '6a5ffd702c6091f279537d66': {
+          description: 'Übergib die im Raid gefundene Tasche von Sanitar',
+        },
+      },
+    },
+
+    // Chemical Experiments
+    // Objective was left in English in the German bundle.
+    // Proof: https://json.tarkov.dev/regular/tasks_de (5a27bafb86f7741c73584017)
+    '5a27bafb86f7741c73584017': {
+      objectives: {
+        // EN: Stash a Corrugated hose in the med lab on Customs
+        '6a5c10e883a51e292d11b976': {
+          description: 'Verstaue einen Wellschlauch im Labor in Customs',
+        },
+      },
+    },
+
+    // Tracker
+    // Objective was left in English in the German bundle.
+    // Proof: https://json.tarkov.dev/regular/tasks_de (5a27bb3d86f77411ea361a21)
+    '5a27bb3d86f77411ea361a21': {
+      objectives: {
+        // EN: Locate the hidden TerraGroup cargo in the Health Resort on Shoreline
+        '6a5cd1942858d1ede4317068': {
+          description: 'Lokalisiere die versteckte TerraGroup-Fracht im Resort auf Shoreline',
+        },
+      },
+    },
+
+    // Feuchte Angelegenheit – Teil 3 / Wet Job - Part 3
+    // Objective was left in English in the German bundle.
+    // Proof: https://json.tarkov.dev/regular/tasks_de (5a27bc1586f7741f6d40fa2f)
+    '5a27bc1586f7741f6d40fa2f': {
+      objectives: {
+        // EN: Mark Artyom's car with an MS2000 Marker
+        '6a5de9b9fee6abb95244f018': {
+          description: 'Markiere Artyoms Auto mit einem MS2000 Marker',
+        },
+      },
+    },
+
+    // "Locate and neutralize X" boss-hunt objectives left in English in the
+    // German bundle. Base template "Finde und eliminiere X" is attested
+    // sixfold elsewhere (Killa, Shturman, Glukhar, Sanitar, Tagilla); the
+    // "(in one raid)" suffix -> "(in einem Raid)" is attested fourfold on
+    // Transit/Ground Zero objectives. Parent tasks confirmed via the live
+    // tarkov.dev task list (objective -> owning task), not ID prefix.
+    //
+    // Streunende Hunde / Stray Dogs
+    // Proof: https://json.tarkov.dev/regular/tasks_de (626c317e05f287031503c7fd / 626c318147ea7f506e5493c7 / 626c3183af14a41d9a1f4ea7)
+    '626bdcc3a371ee3a7a3514c5': {
+      objectives: {
+        // EN: Locate and neutralize Knight (in one raid)
+        '626c317e05f287031503c7fd': {
+          description: 'Finde und eliminiere Knight (in einem Raid)',
+        },
+        // EN: Locate and neutralize Big Pipe (in one raid)
+        '626c318147ea7f506e5493c7': {
+          description: 'Finde und eliminiere Big Pipe (in einem Raid)',
+        },
+        // EN: Locate and neutralize Birdeye (in one raid)
+        '626c3183af14a41d9a1f4ea7': {
+          description: 'Finde und eliminiere Birdeye (in einem Raid)',
+        },
+      },
+    },
+
+    // Pfad des Jägers - Trophäe / The Huntsman Path - Trophy
+    // "Finde und eliminiere Reshala" is BSG's own wording, already attested
+    // verbatim in the German bundle under a different (older) Reshala
+    // objective ID.
+    // Proof: https://json.tarkov.dev/regular/tasks_de (5d26fd8886f77469f0445745)
+    '5d25e2c386f77443e7549029': {
+      objectives: {
+        // EN: Locate and neutralize Reshala
+        '5d26fd8886f77469f0445745': {
+          description: 'Finde und eliminiere Reshala',
+        },
+      },
+    },
+
+    // Nachtreinigung / Night Sweep
+    // "the hooded men" -> "die vermummten Männer" is attested verbatim in
+    // the German bundle on another objective in the same task chain.
+    // Proof: https://json.tarkov.dev/regular/tasks_de (6a5abd63b45ef5b1a87b8273)
+    '60e71c11d54b755a3b53eb65': {
+      objectives: {
+        // EN: Locate and neutralize the hooded men
+        '6a5abd63b45ef5b1a87b8273': {
+          description: 'Finde und eliminiere die vermummten Männer',
+        },
+      },
+    },
+
+    // A Wedge Between Us
+    // "The Wedge" is kept as a proper name: BSG's own German bundle
+    // translates "The Wedge (Labs) Guard" to a broken " Wache" (leading
+    // space, name dropped, key followerWedgeLab), so it is not usable as a
+    // model here.
+    // Proof: https://json.tarkov.dev/regular/tasks_de (69ce1cfb298a6529b30d712d)
+    '69ce1cfb298a6529b30d712b': {
+      objectives: {
+        // EN: Locate and neutralize The Wedge's squad
+        '69ce1cfb298a6529b30d712d': {
+          description: 'Finde und eliminiere den Trupp von The Wedge',
+        },
+      },
+    },
+  },
+
+  storyChapters: {
+    // Accidental Witness (Edge of Darkness storyline chapter)
+    // This objective is a story-chapter sub-quest, not a standalone
+    // tarkov.dev task (its owning task ID has no separate name in the live
+    // bundle - the display name lives on the chapter). Patched under
+    // storyChapters, keyed by the chapter slug and the objective's own
+    // stable ID from src/additions/storyChapters.json5. Same
+    // "Finde und eliminiere Reshala" wording as the Huntsman Path - Trophy
+    // entry above.
+    // Proof: https://json.tarkov.dev/regular/tasks_de (68f3c51a829dc8fbee1f3651)
+    'accidental-witness': {
+      objectives: {
+        // EN: Locate and neutralize Reshala
+        '68f3c51a829dc8fbee1f3651': {
+          description: 'Finde und eliminiere Reshala',
+        },
+      },
+    },
+
+    // They Are Already Here (Edge of Darkness storyline chapter)
+    // Same story-chapter mechanism as Accidental Witness above. "Cultist
+    // Priest" -> "Kultisten-Priester" is attested in the German bundle
+    // (trait key sectantPriest).
+    // Proof: https://json.tarkov.dev/regular/tasks_de (68589307a77e480f775134e1)
+    'they-are-already-here': {
+      objectives: {
+        // EN: Locate and neutralize Cultist Priest
+        '68589307a77e480f775134e1': {
+          description: 'Finde und eliminiere den Kultisten-Priester',
         },
       },
     },
