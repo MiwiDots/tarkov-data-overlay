@@ -9295,7 +9295,7 @@
           "name": "Auf zu großen Höhen! - Teil 5 [PVE ZONE]",
           "objectives": {
             "6978a3305f21afb01d7e0c53": {
-              "description": "Gewinne ein Match und erreiche dabei mindestens den 2. Platz im Team im TeamFight-, BlastGang- oder CheckPoint-Modus"
+              "description": "Gewinne ein Match und erreiche dabei mit deinem Team mindestens den 2. Platz im TeamFight-, BlastGang- oder CheckPoint-Modus"
             }
           }
         },
@@ -9418,7 +9418,7 @@
   },
   "$meta": {
     "version": "1.92",
-    "generated": "2026-09-16T03:13:56.682Z",
-    "sha256": "d70e79fb738be7d20116569c5327ef33f762c66bb4df31e8b888ff4b8cfb2632"
+    "generated": "2026-09-16T03:48:40.078Z",
+    "sha256": "853dd67f0709e333f0821b067c6c7ffcba0a2b85108fb5d629c0829867cc1a60"
   }
 }

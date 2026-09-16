@@ -1416,7 +1416,8 @@
     // anywhere in the bundle. The description below adapts the attested
     // "Gewinne 2 Matches und erreiche dabei mindestens den 3. Platz ..."
     // pattern used for To Great Heights - Part 3 (see above), changed to a
-    // single match, the 2nd place, and "im Team" for "in the team".
+    // single match and the 2nd place, and renders the English "in the team"
+    // as "mit deinem Team" so it cannot read as a placement within the team.
     // Proof: https://json.tarkov.dev/pve/tasks_de (68342265a8d674b5740b31f0)
     '68342265a8d674b5740b31f0': {
       // Was: To Great Heights! - Part 5 [PVE ZONE]
@@ -1424,7 +1425,7 @@
       objectives: {
         // Was: Win a match claiming at least 2nd place in the team in TeamFight, BlastGang, or CheckPoint mode
         '6978a3305f21afb01d7e0c53': {
-          description: 'Gewinne ein Match und erreiche dabei mindestens den 2. Platz im Team im TeamFight-, BlastGang- oder CheckPoint-Modus',
+          description: 'Gewinne ein Match und erreiche dabei mit deinem Team mindestens den 2. Platz im TeamFight-, BlastGang- oder CheckPoint-Modus',
         },
       },
     },
