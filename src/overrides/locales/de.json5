@@ -309,9 +309,11 @@
     },
 
     // Secret Message / Geheime Nachricht
-    // Objective was left in English in the German bundle.
+    // Name and objective were both left in English in the German bundle.
     // Proof: https://json.tarkov.dev/regular/tasks_de (6a5ccda873f06065630d61b0)
     '6a5ccda873f06065630d61b0': {
+      // Was: Secret Message
+      name: 'Geheime Nachricht',
       objectives: {
         // Was: Eliminate any target with headshots using a 12ga shotgun on Streets of Tarkov
         '6a5ccda873f06065630d61b2': {
@@ -910,6 +912,732 @@
         // Was: Eliminate PMC operatives on daytime Factory
         '60ec07bcd7b7cb55e94c1760': {
           description: 'Eliminiere PMCs auf Factory zur Tageszeit',
+        },
+      },
+    },
+
+    // Hot Wheels (BTR-Fahrer)
+    //
+    // Only the optional objective is English; the required one next to it
+    // reads German, which is what makes the task look half-translated. The
+    // bundle resolves per string, so one missing entry is enough.
+    //
+    // No attested source for this wording: the bundle has no "main objective"
+    // and no "as soon as possible" anywhere. "Schliesse ... ab" follows the
+    // attested "Complete the task X" -> "Schliesse die Aufgabe X ab"; the rest
+    // is composed. Good German is the standard here, BSG wording is only a
+    // hint, not an authority - a later BSG translation does not automatically
+    // replace this entry, it only invites a comparison.
+    // Proof: https://json.tarkov.dev/regular/tasks_de (673f4e956f1b89c7bc0f56ef)
+    '673f4e956f1b89c7bc0f56ef': {
+      objectives: {
+        // Was: Complete the main objective as soon as possible
+        '673f5065cdfe082966842575': {
+          description: 'Schließe das Hauptziel so schnell wie möglich ab',
+        },
+      },
+    },
+
+    // Demonstration Model
+    //
+    // Not a missing translation - BSG's own German bundle serves the English
+    // string as the German value for this task's name. Only the name exists
+    // for this task in the bundle; there is no description or objective text
+    // to compare against.
+    //
+    // Chosen for readable German: "Vorführmodell" is the idiomatic term for a
+    // demonstration/display unit. BSG has no German rendering for this name,
+    // so there is nothing to compare against - but note that BSG wording is a
+    // hint here, not the standard. This entry stands on its own; a later BSG
+    // translation does not automatically replace it, it only invites a
+    // comparison.
+    // Proof: https://json.tarkov.dev/regular/tasks_de (6a5cd2178fd7c2b201032f3f)
+    //
+    // Objective was left in English in the German bundle.
+    // Proof: https://json.tarkov.dev/regular/tasks_de (6a5cd2178fd7c2b201032f41)
+    '6a5cd2178fd7c2b201032f3f': {
+      // Was: Demonstration Model
+      name: 'Vorführmodell',
+      objectives: {
+        // Was: Eliminate any target with headshots with 7.62x51 assault rifles or DMRs on Reserve
+        '6a5cd2178fd7c2b201032f41': {
+          description: 'Eliminiere ein beliebiges Ziel mit Kopfschüssen, während du 7,62x51-Sturmgewehre oder Präzisionsgewehre auf Reserve benutzt',
+        },
+      },
+    },
+
+    // The Bunker
+    //
+    // Not a missing translation - BSG's own German bundle serves the English
+    // string as the German value for this task's name. Only the name exists
+    // for this task in the bundle; there is no description or objective text
+    // to compare against.
+    //
+    // "Der Bunker" is the plain, idiomatic German rendering of "The Bunker"
+    // and is chosen on that basis. It additionally lines up with BSG's own
+    // translation of the sibling task "The Bunker - Part 2"
+    // (5ede567cfa6dc072ce15d6e3), which the same bundle renders as
+    // "Der Bunker – Teil 2" — a confirming data point, not the reason for
+    // the choice. (That sibling uses an en dash "–"; this task has no part
+    // suffix, so the dash does not apply here.)
+    //
+    // This entry is deliberate, not a placeholder: it does not defer to a
+    // future BSG string. If BSG later ships its own German name for this
+    // task, that is cause to compare it against this entry, not to
+    // automatically replace this entry with it.
+    // Proof: https://json.tarkov.dev/regular/tasks_de (5ede55112c95834b583f052a)
+    //
+    // Five objectives of this task are English in the German bundle. Not
+    // missing German: BSG recreated these five objectives under NEW ids and
+    // the old ids still hold the German text, which the new ids never
+    // inherited (old -> new): 5ee8ec5ed72d953f5d2aabd1 -> 6a5f419a91369c05ae763827,
+    // 5ee8ecd75eb3205dae135d17 -> 6a5f419cca7ba5dbb6dfec49,
+    // 5ee8ed18d72d953f5d2aabd4 -> 6a5f419eae9bbeb8ca0c46d0,
+    // 5ee8eddde932d53763761b2c -> 6a5f41a021f78bafb63c3d47,
+    // 5ee8edf1500391756d7498a7 -> 6a5f41bf54a91e0d977db806.
+    //
+    // BSG's old wording is not copied verbatim: it has two grammar errors -
+    // "eine der zwei hermetische Türen" (wrong declension, should be
+    // "hermetischen") and "... Türen, welche zur Baracke #1 führt" (number
+    // mismatch, "Türen" needs "führen"). "welche" is also replaced by "die"
+    // for a more natural read. "Hermetische Tür" itself is kept as-is - it
+    // has five attested hits in the German bundle, while "Drucktür",
+    // "Schleuse" and "Sicherheitstür" have none.
+    // Proof: https://json.tarkov.dev/regular/tasks_de
+    '5ede55112c95834b583f052a': {
+      // Was: The Bunker
+      name: 'Der Bunker',
+      objectives: {
+        // Was: Locate the hermetic door leading to the hospital (White Bishop) on Reserve
+        '6a5f419a91369c05ae763827': {
+          description: 'Lokalisiere die hermetische Tür, die zum Krankenhaus führt (Weißer Läufer)',
+        },
+        // Was: Locate one of the two hermetic doors leading to the academy building (Black Bishop) on Reserve
+        '6a5f419cca7ba5dbb6dfec49': {
+          description: 'Lokalisiere eine der beiden hermetischen Türen, die zum Gebäude der Akademie führen (Schwarzer Läufer)',
+        },
+        // Was: Locate one of the two hermetic doors leading to barracks #1 (Black Pawn) on Reserve
+        '6a5f419eae9bbeb8ca0c46d0': {
+          description: 'Lokalisiere eine der beiden hermetischen Türen, die zur Baracke #1 führen (Schwarzer Bauer)',
+        },
+        // Was: Locate one of the two hermetic doors leading to barracks #2 (White Pawn) on Reserve
+        '6a5f41a021f78bafb63c3d47': {
+          description: 'Lokalisiere eine der beiden hermetischen Türen, die zur Baracke #2 führen (Weißer Bauer)',
+        },
+        // Was: Locate the hermetic door leading to the air control center building (King) on Reserve
+        '6a5f41bf54a91e0d977db806': {
+          description: 'Lokalisiere die hermetische Tür, die zum Gebäude des Luftkontrollzentrums führt (König)',
+        },
+      },
+    },
+
+    // Hiking
+    // Name was left in English in the German bundle.
+    // Proof: https://json.tarkov.dev/regular/tasks_de (6a5c1578f2689567c30eb0f3)
+    '6a5c1578f2689567c30eb0f3': {
+      // Was: Hiking
+      name: 'Wandern',
+    },
+
+    // Ironclad Proof
+    // Objective was left in English in the German bundle.
+    // Proof: https://json.tarkov.dev/regular/tasks_de (59ca1a6286f774509a270942)
+    '59ca1a6286f774509a270942': {
+      objectives: {
+        // Was: Eliminate any target with a GP-25 grenade launcher
+        '6a5f44d815430d6a5b5161b1': {
+          description: 'Eliminiere ein beliebiges Ziel mit einem GP-25-Granatwerfer',
+        },
+      },
+    },
+
+    // Gifts from Tarkov
+    // Objective was left in English in the German bundle.
+    // Proof: https://json.tarkov.dev/regular/tasks_de (61958c366726521dd96828ec)
+    '61958c366726521dd96828ec': {
+      objectives: {
+        // Was: Eliminate any target with an M203 grenade launcher on Lighthouse or Reserve
+        '6a5cd57d36c4fb654692787c': {
+          description: 'Eliminiere ein beliebiges Ziel mit einem M203-Granatwerfer auf Lighthouse oder Reserve',
+        },
+      },
+    },
+
+    // Feuchte Angelegenheit – Teil 6 / Wet Job - Part 6
+    // Objective was left in English in the German bundle.
+    // Proof: https://json.tarkov.dev/regular/tasks_de (5a27bc8586f7741b543d8ea4)
+    '5a27bc8586f7741b543d8ea4': {
+      objectives: {
+        // Was: Eliminate any target with any 7.62x51 DMR from over 50 meters away on Shoreline or Lighthouse
+        '6a5dea83a4dd339f77be89eb': {
+          description: 'Eliminiere ein beliebiges Ziel mit einem beliebigen 7,62x51-Präzisionsgewehr aus über 50 Meter Entfernung auf Shoreline oder Lighthouse',
+        },
+      },
+    },
+
+    // Der Fremdenführer / The Guide
+    // Objective was left in English in the German bundle.
+    // Proof: https://json.tarkov.dev/regular/tasks_de (5c0d4e61d09282029f53920e)
+    '5c0d4e61d09282029f53920e': {
+      objectives: {
+        // Was: Eliminate any target
+        '6a5cdc97790159682d2bc19e': {
+          description: 'Eliminiere ein beliebiges Ziel',
+        },
+      },
+    },
+
+    // I Need More Power
+    // Objective was left in English in the German bundle.
+    // Proof: https://json.tarkov.dev/regular/tasks_de (5a03296886f774569778596a)
+    '5a03296886f774569778596a': {
+      objectives: {
+        // Was: Hand over the found in raid item: Metal fuel tank or Expeditionary fuel tank
+        '6a5cd11e5cf929b0f5d76816': {
+          description: 'Übergib den im Raid gefundenen Gegenstand: Metall-Kraftstofftank oder Kraftstoffbehälter für Expeditionen',
+        },
+      },
+    },
+
+    // Überbevölkerung / Overpopulation
+    // Objective was left in English in the German bundle.
+    // Proof: https://json.tarkov.dev/regular/tasks_de (6179aff8f57fb279792c60a1)
+    '6179aff8f57fb279792c60a1': {
+      objectives: {
+        // Was: Hand over the found in raid item: Topographic survey maps, Intelligence folder, or TerraGroup "Blue Folders" materials
+        '6a5cd4d03a5504087ed636d3': {
+          description: 'Übergib den im Raid gefundenen Gegenstand: Topographische Übersichtskarten, Ordner mit Informationen oder TerraGroups „Blaue Ordner“',
+        },
+      },
+    },
+
+    // Pfad des Jägers - Sadist / The Huntsman Path - Sadist
+    // Objective was left in English in the German bundle. "Sanitar's bag" has
+    // no item translation to compare against; a definite article plus a
+    // preposed genitive possessive don't coexist in German, so the
+    // possessive is resolved into a "von" construction instead.
+    // Proof: https://json.tarkov.dev/regular/tasks_de (5edab4b1218d181e29451435)
+    '5edab4b1218d181e29451435': {
+      objectives: {
+        // Was: Hand over the found in raid Sanitar's bag
+        '6a5ffd702c6091f279537d66': {
+          description: 'Übergib die im Raid gefundene Tasche von Sanitar',
+        },
+      },
+    },
+
+    // Chemical Experiments
+    // Objective was left in English in the German bundle.
+    // Proof: https://json.tarkov.dev/regular/tasks_de (5a27bafb86f7741c73584017)
+    '5a27bafb86f7741c73584017': {
+      objectives: {
+        // Was: Stash a Corrugated hose in the med lab on Customs
+        '6a5c10e883a51e292d11b976': {
+          description: 'Verstaue einen Wellschlauch im Labor in Customs',
+        },
+      },
+    },
+
+    // Tracker
+    // Objective was left in English in the German bundle.
+    // Proof: https://json.tarkov.dev/regular/tasks_de (5a27bb3d86f77411ea361a21)
+    '5a27bb3d86f77411ea361a21': {
+      objectives: {
+        // Was: Locate the hidden TerraGroup cargo in the Health Resort on Shoreline
+        '6a5cd1942858d1ede4317068': {
+          description: 'Lokalisiere die versteckte TerraGroup-Fracht im Resort auf Shoreline',
+        },
+      },
+    },
+
+    // Feuchte Angelegenheit – Teil 3 / Wet Job - Part 3
+    // Objective was left in English in the German bundle.
+    // Proof: https://json.tarkov.dev/regular/tasks_de (5a27bc1586f7741f6d40fa2f)
+    '5a27bc1586f7741f6d40fa2f': {
+      objectives: {
+        // Was: Mark Artyom's car with an MS2000 Marker
+        '6a5de9b9fee6abb95244f018': {
+          description: 'Markiere Artyoms Auto mit einem MS2000 Marker',
+        },
+      },
+    },
+
+    // "Locate and neutralize X" boss-hunt objectives left in English in the
+    // German bundle. Base template "Finde und eliminiere X" is attested
+    // sixfold elsewhere (Killa, Shturman, Glukhar, Sanitar, Tagilla); the
+    // "(in one raid)" suffix -> "(in einem Raid)" is attested fourfold on
+    // Transit/Ground Zero objectives. Parent tasks confirmed via the live
+    // tarkov.dev task list (objective -> owning task), not ID prefix.
+    //
+    // Streunende Hunde / Stray Dogs
+    // Proof: https://json.tarkov.dev/regular/tasks_de (626c317e05f287031503c7fd / 626c318147ea7f506e5493c7 / 626c3183af14a41d9a1f4ea7)
+    '626bdcc3a371ee3a7a3514c5': {
+      objectives: {
+        // Was: Locate and neutralize Knight (in one raid)
+        '626c317e05f287031503c7fd': {
+          description: 'Finde und eliminiere Knight (in einem Raid)',
+        },
+        // Was: Locate and neutralize Big Pipe (in one raid)
+        '626c318147ea7f506e5493c7': {
+          description: 'Finde und eliminiere Big Pipe (in einem Raid)',
+        },
+        // Was: Locate and neutralize Birdeye (in one raid)
+        '626c3183af14a41d9a1f4ea7': {
+          description: 'Finde und eliminiere Birdeye (in einem Raid)',
+        },
+      },
+    },
+
+    // Pfad des Jägers - Trophäe / The Huntsman Path - Trophy
+    // "Finde und eliminiere Reshala" is BSG's own wording, already attested
+    // verbatim in the German bundle under a different (older) Reshala
+    // objective ID.
+    // Proof: https://json.tarkov.dev/regular/tasks_de (5d26fd8886f77469f0445745)
+    '5d25e2c386f77443e7549029': {
+      objectives: {
+        // Was: Locate and neutralize Reshala
+        '5d26fd8886f77469f0445745': {
+          description: 'Finde und eliminiere Reshala',
+        },
+      },
+    },
+
+    // Nachtreinigung / Night Sweep
+    // "the hooded men" -> "die vermummten Männer" is attested verbatim in
+    // the German bundle on another objective in the same task chain.
+    // Proof: https://json.tarkov.dev/regular/tasks_de (6a5abd63b45ef5b1a87b8273)
+    '60e71c11d54b755a3b53eb65': {
+      objectives: {
+        // Was: Locate and neutralize the hooded men
+        '6a5abd63b45ef5b1a87b8273': {
+          description: 'Finde und eliminiere die vermummten Männer',
+        },
+      },
+    },
+
+    // A Wedge Between Us
+    // "The Wedge" is kept as a proper name: BSG's own German bundle
+    // translates "The Wedge (Labs) Guard" to a broken " Wache" (leading
+    // space, name dropped, key followerWedgeLab), so it is not usable as a
+    // model here.
+    // Proof: https://json.tarkov.dev/regular/tasks_de (69ce1cfb298a6529b30d712d)
+    '69ce1cfb298a6529b30d712b': {
+      objectives: {
+        // Was: Locate and neutralize The Wedge's squad
+        '69ce1cfb298a6529b30d712d': {
+          description: 'Finde und eliminiere den Trupp von The Wedge',
+        },
+      },
+    },
+
+    // Easy Money - Part 1 [PVP ZONE] / Leicht verdientes Geld - Teil 1 [PVP ZONE]
+    // Two bugs in one string: a grammatically wrong dative plural ("den
+    // Wohnquartiere" needs the "-n": "Wohnquartieren"), and a stale item
+    // name - BSG's text names the "Bison VS Undertaker" posters (plural),
+    // but the current English objective names a single "Arena advertisement
+    // poster" instead, so BSG's own German has fallen behind their English.
+    // This translation follows the current English content.
+    //
+    // Objective id 6606b709f7ce34bb26221cab is shared with the PVE twin task
+    // 6834145ebc1f443d7603c8a7 (objective 6834145ebc1f443d7603c8ab), which
+    // carries the identical fix - there the German bundle entry was missing
+    // entirely (stale English), here it exists but is broken.
+    // Proof: https://json.tarkov.dev/regular/tasks_de (66058cb22cee99303f1ba067)
+    '66058cb22cee99303f1ba067': {
+      objectives: {
+        // Was: Plant the Arena advertisement poster in the living quarters at the Scav base on Customs
+        '6606b709f7ce34bb26221cab': {
+          description: 'Platziere das Arena-Werbeplakat in den Wohnquartieren der Scavbasis in Customs',
+        },
+      },
+    },
+
+    // PVE-exclusive Arena task chain ("[PVE ZONE]" suffix)
+    //
+    // These tasks only exist in the PVE game mode (json.tarkov.dev/pve/tasks);
+    // they have no id in the regular bundle at all. The German bundle left
+    // both the task names and several objective descriptions in plain
+    // English. The "[PVE ZONE]" suffix is kept in every translated name:
+    // BSG's own German localization drops the suffix entirely, which would
+    // make the PVE and PVP variants of these tasks display identically and
+    // become indistinguishable in the tracker.
+    //
+    // 16 of the 21 names below have an attested PVP-mode twin (same name
+    // minus "[PVE ZONE]" replaced by "[PVP ZONE]"); those names are copied
+    // verbatim from the PVP twin's translated German name, including
+    // whichever hyphen variant that bundle already uses. The remaining 5
+    // (both "Professional Fitness" parts, "Arena Business", "Hold the
+    // Lead", and "To Great Heights! - Part 6") have no translated twin
+    // anywhere in the bundle; "To Great Heights! - Part 6" is derived from
+    // the "Teil 1"-"Teil 5" naming already used by its own chain, the other
+    // 4 are original translations.
+    //
+    // Proof: https://json.tarkov.dev/pve/tasks_de
+
+    // Easy Money - Part 1 / Leicht verdientes Geld - Teil 1
+    // Name twin: 66058cb22cee99303f1ba067 ("Easy Money - Part 1 [PVP ZONE]").
+    // The single objective is left in stale English by the bundle, and it
+    // is stale in two ways, not just untranslated: its English text
+    // duplicates the PVP twin task's objective (6606b709f7ce34bb26221cab),
+    // whose German bundle entry exists but is itself broken. It reads
+    // "Platziere die „Bison VS Undertaker"-Plakate in den Wohnquartiere der
+    // Scavbasis in Customs" - a grammatically wrong dative plural ("den
+    // Wohnquartiere" needs the "-n": "Wohnquartieren"), naming an old poster
+    // ("Bison VS Undertaker", plural) that BSG has since swapped for a
+    // different, singular one. The current English text for this PVE task
+    // confirms the swap: "the Arena advertisement poster" (singular). This
+    // translation follows the current English content and reuses the PVP
+    // twin's established structure and terms ("Platziere ...", "Scavbasis",
+    // "in Customs") while fixing the grammar and the item name.
+    // Proof: https://json.tarkov.dev/pve/tasks_de (6834145ebc1f443d7603c8a7)
+    '6834145ebc1f443d7603c8a7': {
+      // Was: Easy Money - Part 1 [PVE ZONE]
+      name: 'Leicht verdientes Geld - Teil 1 [PVE ZONE]',
+      objectives: {
+        // Was: Plant the Arena advertisement poster in the living quarters at the Scav base on Customs
+        '6834145ebc1f443d7603c8ab': {
+          description: 'Platziere das Arena-Werbeplakat in den Wohnquartieren der Scavbasis in Customs',
+        },
+      },
+    },
+
+    // Easy Money - Part 2 / Leicht verdientes Geld - Teil 2
+    // Name twin: 66058cb5ae4719735349b9e8 ("Easy Money - Part 2 [PVP ZONE]").
+    // The Food-category objective has no twin; it mirrors the sibling
+    // Drinks-category objective on this same task, which is already
+    // translated ("aus der Getränke-Kategorie").
+    // Proof: https://json.tarkov.dev/pve/tasks_de (6834158f2f0e2a7eb90b62c8)
+    '6834158f2f0e2a7eb90b62c8': {
+      // Was: Easy Money - Part 2 [PVE ZONE]
+      name: 'Leicht verdientes Geld - Teil 2 [PVE ZONE]',
+      objectives: {
+        // Was: Hand over the found in raid items from the Food category
+        '6834158f2f0e2a7eb90b62cc': {
+          description: 'Übergib im Raid gefundene Gegenstände aus der Lebensmittel-Kategorie',
+        },
+      },
+    },
+
+    // Balancing - Part 1
+    // Name twin: 66058cb7c7f3584787181476 ("Balancing - Part 1 [PVP ZONE]").
+    // Proof: https://json.tarkov.dev/pve/tasks_de (68341846186efa3c5b07f989)
+    '68341846186efa3c5b07f989': {
+      // Was: Balancing - Part 1 [PVE ZONE]
+      name: 'Balancing - Teil 1 [PVE ZONE]',
+    },
+
+    // Balancing - Part 2
+    // Name twin: 66058cb9e8e4f17985230805 ("Balancing - Part 2 [PVP ZONE]").
+    // Proof: https://json.tarkov.dev/pve/tasks_de (68341a0b2f0e2a7eb90b62d4)
+    '68341a0b2f0e2a7eb90b62d4': {
+      // Was: Balancing - Part 2 [PVE ZONE]
+      name: 'Balancing - Teil 2 [PVE ZONE]',
+    },
+
+    // Surprise / Überraschung
+    // Name twin: 66058cbb06ef1d50a60c1f46 ("Surprise [PVP ZONE]").
+    // Proof: https://json.tarkov.dev/pve/tasks_de (68341b407559f4e6d50bc0ce)
+    '68341b407559f4e6d50bc0ce': {
+      // Was: Surprise [PVE ZONE]
+      name: 'Überraschung [PVE ZONE]',
+    },
+
+    // Create a Distraction - Part 1 / Ablenkungsmanöver - Teil 1
+    // Name twin: 66058cbd9f59e625462acc8e ("Create a Distraction - Part 1 [PVP ZONE]").
+    // Proof: https://json.tarkov.dev/pve/tasks_de (68341c4babec72d95d0c1260)
+    '68341c4babec72d95d0c1260': {
+      // Was: Create a Distraction - Part 1 [PVE ZONE]
+      name: 'Ablenkungsmanöver - Teil 1 [PVE ZONE]',
+    },
+
+    // Create a Distraction - Part 2 / Ablenkungsmanöver - Teil 2
+    // Name twin: 66058cbf2f19c31a5a1337ec ("Create a Distraction - Part 2 [PVP ZONE]").
+    // Proof: https://json.tarkov.dev/pve/tasks_de (68341d7d7559f4e6d50bc0db)
+    '68341d7d7559f4e6d50bc0db': {
+      // Was: Create a Distraction - Part 2 [PVE ZONE]
+      name: 'Ablenkungsmanöver - Teil 2 [PVE ZONE]',
+    },
+
+    // To Great Heights! - Part 1 / Auf zu großen Höhen! - Teil 1
+    // Name twin: 66058cc1da30b620a34e6e86 ("To Great Heights! - Part 1 [PVP ZONE]").
+    // Proof: https://json.tarkov.dev/pve/tasks_de (68341eb25619c8e2a9031501)
+    '68341eb25619c8e2a9031501': {
+      // Was: To Great Heights! - Part 1 [PVE ZONE]
+      name: 'Auf zu großen Höhen! - Teil 1 [PVE ZONE]',
+    },
+
+    // To Great Heights! - Part 2 / Auf zu großen Höhen! - Teil 2
+    // Name twin: 66058cc208308761cf390993 ("To Great Heights! - Part 2 [PVP ZONE]").
+    // Proof: https://json.tarkov.dev/pve/tasks_de (68341f6fe2e7ef70a3060a0a)
+    '68341f6fe2e7ef70a3060a0a': {
+      // Was: To Great Heights! - Part 2 [PVE ZONE]
+      name: 'Auf zu großen Höhen! - Teil 2 [PVE ZONE]',
+    },
+
+    // To Great Heights! - Part 3 / Auf zu großen Höhen! - Teil 3
+    // Name twin: 66058cc5bb83da7ba474aba9 ("To Great Heights! - Part 3 [PVP ZONE]").
+    // The objective description is also stale English in the German bundle
+    // ("Win a match..." instead of the current "Win 2 matches..."); the
+    // regular-mode twin of this exact same task/objective wording is already
+    // fixed further up in this file (see 66058cc5bb83da7ba474aba9 above),
+    // reused verbatim here.
+    // Proof: https://json.tarkov.dev/pve/tasks_de (6834202a186efa3c5b07f9a2)
+    '6834202a186efa3c5b07f9a2': {
+      // Was: To Great Heights! - Part 3 [PVE ZONE]
+      name: 'Auf zu großen Höhen! - Teil 3 [PVE ZONE]',
+      objectives: {
+        // Was: Win 2 matches while claiming at least 3rd place in TeamFight, BlastGang, or CheckPoint mode in Arena
+        '6834202a186efa3c5b07f9a5': {
+          description: 'Gewinne 2 Matches und erreiche dabei mindestens den 3. Platz im TeamFight-, BlastGang- oder CheckPoint-Modus in Arena',
+        },
+      },
+    },
+
+    // To Great Heights! - Part 4 / Auf zu großen Höhen! - Teil 4
+    // Name twin: 66058cc72cee99303f1ba069 ("To Great Heights! - Part 4 [PVP ZONE]").
+    // "Hand over Roubles" translation is attested verbatim elsewhere in this
+    // bundle (objective 6633a85e347a2a2b4051a26b).
+    // Proof: https://json.tarkov.dev/pve/tasks_de (683421515619c8e2a9031511)
+    '683421515619c8e2a9031511': {
+      // Was: To Great Heights! - Part 4 [PVE ZONE]
+      name: 'Auf zu großen Höhen! - Teil 4 [PVE ZONE]',
+      objectives: {
+        // Was: Hand over Roubles
+        '683421515619c8e2a9031514': {
+          description: 'Übergebe Rubel aus deinem EFT-Versteck',
+        },
+      },
+    },
+
+    // To Great Heights! - Part 5 / Auf zu großen Höhen! - Teil 5
+    // Name twin: 66058cc9ae4719735349b9ea ("To Great Heights! - Part 5 [PVP ZONE]"),
+    // but that twin's own objective is untranslated too, so there is no
+    // attested translation of "claiming at least 2nd place in the team"
+    // anywhere in the bundle. The description below adapts the attested
+    // "Gewinne 2 Matches und erreiche dabei mindestens den 3. Platz ..."
+    // pattern used for To Great Heights - Part 3 (see above), changed to a
+    // single match and the 2nd place, and renders the English "in the team"
+    // as "mit deinem Team" so it cannot read as a placement within the team.
+    // Proof: https://json.tarkov.dev/pve/tasks_de (68342265a8d674b5740b31f0)
+    '68342265a8d674b5740b31f0': {
+      // Was: To Great Heights! - Part 5 [PVE ZONE]
+      name: 'Auf zu großen Höhen! - Teil 5 [PVE ZONE]',
+      objectives: {
+        // Was: Win a match claiming at least 2nd place in the team in TeamFight, BlastGang, or CheckPoint mode
+        '6978a3305f21afb01d7e0c53': {
+          description: 'Gewinne ein Match und erreiche dabei mit deinem Team mindestens den 2. Platz im TeamFight-, BlastGang- oder CheckPoint-Modus',
+        },
+      },
+    },
+
+    // Against the Conscience - Part 1 / Entgegen jeglichen Gewissens - Teil 1
+    // Name twin: 66058ccbc7f3584787181478 ("Against the Conscience - Part 1 [PVP ZONE]").
+    // Both objectives are attested verbatim elsewhere in this bundle:
+    // "Find out what happened to the champion" -> "Finde heraus, was mit dem
+    // Champion passiert ist" (664ef37c4c1e8a2e6c4b1e9a), and "Survive and
+    // extract from the location" -> "Überlebe und entkomme aus dem Bereich"
+    // (many objectives). Note the near-miss: 63a7dbefee7b4d0d5507baf8 renders
+    // the *warden* variant as "Wächter" - a different objective, not this one.
+    // Proof: https://json.tarkov.dev/pve/tasks_de (6834233fecd5cf3a440d855b)
+    '6834233fecd5cf3a440d855b': {
+      // Was: Against the Conscience - Part 1 [PVE ZONE]
+      name: 'Entgegen jeglichen Gewissens - Teil 1 [PVE ZONE]',
+      objectives: {
+        // Was: Find out what happened to the champion
+        '6834233fecd5cf3a440d8561': {
+          description: 'Finde heraus, was mit dem Champion passiert ist',
+        },
+        // Was: Survive and extract from the location
+        '6834233fecd5cf3a440d8564': {
+          description: 'Überlebe und entkomme aus dem Bereich',
+        },
+      },
+    },
+
+    // Against the Conscience - Part 2 / Entgegen jeglichen Gewissens - Teil 2
+    // Name twin: 66058ccde8e4f17985230807 ("Against the Conscience - Part 2 [PVP ZONE]").
+    // Proof: https://json.tarkov.dev/pve/tasks_de (68342446a8d674b5740b31fc)
+    '68342446a8d674b5740b31fc': {
+      // Was: Against the Conscience - Part 2 [PVE ZONE]
+      name: 'Entgegen jeglichen Gewissens - Teil 2 [PVE ZONE]',
+    },
+
+    // Decisions, Decisions / Entscheidungen, Entscheidungen
+    // Name twin: 66058cd19f59e625462acc90 ("Decisions, Decisions [PVP ZONE]").
+    // "Hand over the found info" is attested verbatim on the Surprise Gift
+    // task further down this bundle (683427418f5b18d29a05d9e9).
+    // Proof: https://json.tarkov.dev/pve/tasks_de (6834254f2f0e2a7eb90b62ef)
+    '6834254f2f0e2a7eb90b62ef': {
+      // Was: Decisions, Decisions [PVE ZONE]
+      name: 'Entscheidungen, Entscheidungen [PVE ZONE]',
+      objectives: {
+        // Was: Hand over the found info
+        '6834254f2f0e2a7eb90b62f2': {
+          description: 'Übergib die gefundenen Informationen',
+        },
+      },
+    },
+
+    // Between Two Fires / Zwischen Zwei Feuern
+    // Name twin: 66058ccf06ef1d50a60c1f48 ("Between Two Fires [PVP ZONE]").
+    // All three objectives are attested verbatim elsewhere on this same PVE
+    // Arena task chain: "Return to the old champion's hideout on Customs"
+    // and "Hand over the found info" on the Surprise Gift task
+    // (683427418f5b18d29a05d9e5, 683427418f5b18d29a05d9e9); "Locate and
+    // obtain the compromising information on Ref" on the Decisions,
+    // Decisions task above (6834254f2f0e2a7eb90b62f1).
+    // Proof: https://json.tarkov.dev/pve/tasks_de (683425dd8f5b18d29a05d9d1)
+    '683425dd8f5b18d29a05d9d1': {
+      // Was: Between Two Fires [PVE ZONE]
+      name: 'Zwischen Zwei Feuern [PVE ZONE]',
+      objectives: {
+        // Was: Return to the old champion's hideout on Customs
+        '683425dd8f5b18d29a05d9d4': {
+          description: 'Kehre zum Versteck des alten Champions auf Customs zurück',
+        },
+        // Was: Locate and obtain the compromising information on Ref
+        '683425dd8f5b18d29a05d9d6': {
+          description: 'Finde kompromittierende Informationen über Ref',
+        },
+        // Was: Hand over the found info
+        '683425dd8f5b18d29a05d9d8': {
+          description: 'Übergib die gefundenen Informationen',
+        },
+      },
+    },
+
+    // Professional Fitness - Part 1 / Professionelle Fitness - Teil 1
+    // No PVP-mode twin (its own PVP name, 69788c2bac719606e40b4e77, is
+    // untranslated too, and so is its objective - no attested translation
+    // of "Play a match" exists anywhere in the bundle). "Spiele ein Match
+    // im X- oder Y-Modus" mirrors the attested "Gewinne ein Match im X-
+    // oder Y-Modus in Arena" sentence structure used elsewhere on this task
+    // chain, only swapping the verb for "Play".
+    // Proof: https://json.tarkov.dev/pve/tasks_de (69788d4e963f08d9140bce19)
+    '69788d4e963f08d9140bce19': {
+      // Was: Professional Fitness - Part 1 [PVE ZONE]
+      name: 'Professionelle Fitness - Teil 1 [PVE ZONE]',
+      objectives: {
+        // Was: Play a match in CheckPoint or Last Hero mode
+        '69788d4e963f08d9140bce1c': {
+          description: 'Spiele ein Match im CheckPoint- oder Last Hero-Modus',
+        },
+      },
+    },
+
+    // Arena Business / Arena-Geschäfte
+    // No PVP-mode twin. All three objectives follow the attested
+    // "Complete the task X" -> "Schließe die Aufgabe X ab" pattern used
+    // throughout this bundle; the referenced task names are plain English
+    // in the objective text itself (BSG's own source strings do not carry
+    // the "[PVE ZONE]" suffix here), so the German task names below also
+    // omit it.
+    // Proof: https://json.tarkov.dev/pve/tasks_de (697878057aa1273126030fb0)
+    '697878057aa1273126030fb0': {
+      // Was: Arena Business [PVE ZONE]
+      name: 'Arena-Geschäfte [PVE ZONE]',
+      objectives: {
+        // Was: Complete the task Professional Fitness - Part 2
+        '69789903c30426685c9f3080': {
+          description: 'Schließe die Aufgabe Professionelle Fitness - Teil 2 ab',
+        },
+        // Was: Complete the task To Great Heights! - Part 6
+        '6978990cbe971818240c2d7f': {
+          description: 'Schließe die Aufgabe Auf zu großen Höhen! - Teil 6 ab',
+        },
+        // Was: Complete the task Hold the Lead
+        '697899167ed646e5d6187fea': {
+          description: 'Schließe die Aufgabe Halte die Führung ab',
+        },
+      },
+    },
+
+    // Hold the Lead / Halte die Führung
+    // No PVP-mode twin (its own PVP name, 697895b6c639962b2e0cf268, is
+    // untranslated too). "Eliminiere Gegner in Arena" mirrors the attested
+    // "Eliminiere Gegner in einem beliebigen Spielmodus in Arena" objective
+    // on Against the Conscience - Part 2 above, without the "any game mode"
+    // qualifier this objective's English text does not have.
+    // Proof: https://json.tarkov.dev/pve/tasks_de (69789660b2187365e70bb94a)
+    '69789660b2187365e70bb94a': {
+      // Was: Hold the Lead [PVE ZONE]
+      name: 'Halte die Führung [PVE ZONE]',
+      objectives: {
+        // Was: Eliminate enemies in Arena
+        '69789660b2187365e70bb94d': {
+          description: 'Eliminiere Gegner in Arena',
+        },
+      },
+    },
+
+    // Professional Fitness - Part 2 / Professionelle Fitness - Teil 2
+    // No PVP-mode twin (its own PVP name, 69788db3878a4385d10c0718, is
+    // untranslated too). Same "Eliminiere Gegner in Arena" objective as
+    // Hold the Lead above.
+    // Proof: https://json.tarkov.dev/pve/tasks_de (6978907718bd6d7cbd0e8b8e)
+    '6978907718bd6d7cbd0e8b8e': {
+      // Was: Professional Fitness - Part 2 [PVE ZONE]
+      name: 'Professionelle Fitness - Teil 2 [PVE ZONE]',
+      objectives: {
+        // Was: Eliminate enemies in Arena
+        '6978907718bd6d7cbd0e8b91': {
+          description: 'Eliminiere Gegner in Arena',
+        },
+      },
+    },
+
+    // To Great Heights! - Part 6 / Auf zu großen Höhen! - Teil 6
+    // No PVP-mode twin; the name is derived from "Teil 1" through "Teil 5"
+    // in this same chain above. The objective's exact English wording
+    // ("Win two matches in a row in TeamFight, BlastGang, or CheckPoint
+    // mode") has an attested German translation orphaned in this same
+    // locale bundle under a stale, no-longer-referenced objective id
+    // (662ba87106e44407b79e9ab2 / 68342265a8d674b5740b31f3 - a previous
+    // revision of the To Great Heights - Part 5 objective before BSG
+    // reworded it to the "claiming at least 2nd place" text used above),
+    // reused verbatim here since the English sentence is identical.
+    // Proof: https://json.tarkov.dev/pve/tasks_de (697895277d31587eab080266)
+    '697895277d31587eab080266': {
+      // Was: To Great Heights! - Part 6 [PVE ZONE]
+      name: 'Auf zu großen Höhen! - Teil 6 [PVE ZONE]',
+      objectives: {
+        // Was: Win two matches in a row in TeamFight, BlastGang, or CheckPoint mode
+        '6978a2bc18130b67d9156d7a': {
+          description: 'Gewinne zwei Matches in Folge im TeamFight-, BlastGang- oder CheckPoint-Modus in Arena',
+        },
+      },
+    },
+  },
+
+  storyChapters: {
+    // Accidental Witness (Edge of Darkness storyline chapter)
+    // This objective is a story-chapter sub-quest, not a standalone
+    // tarkov.dev task (its owning task ID has no separate name in the live
+    // bundle - the display name lives on the chapter). Patched under
+    // storyChapters, keyed by the chapter slug and the objective's own
+    // stable ID from src/additions/storyChapters.json5. Same
+    // "Finde und eliminiere Reshala" wording as the Huntsman Path - Trophy
+    // entry above.
+    // Proof: https://json.tarkov.dev/regular/tasks_de (68f3c51a829dc8fbee1f3651)
+    'accidental-witness': {
+      objectives: {
+        // Was: Locate and neutralize Reshala
+        '68f3c51a829dc8fbee1f3651': {
+          description: 'Finde und eliminiere Reshala',
+        },
+      },
+    },
+
+    // They Are Already Here (Edge of Darkness storyline chapter)
+    // Same story-chapter mechanism as Accidental Witness above. "Cultist
+    // Priest" -> "Kultisten-Priester" is attested in the German bundle
+    // (trait key sectantPriest).
+    // Proof: https://json.tarkov.dev/regular/tasks_de (68589307a77e480f775134e1)
+    'they-are-already-here': {
+      objectives: {
+        // Was: Locate and neutralize Cultist Priest
+        '68589307a77e480f775134e1': {
+          description: 'Finde und eliminiere den Kultisten-Priester',
         },
       },
     },

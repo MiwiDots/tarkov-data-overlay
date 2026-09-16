@@ -9228,6 +9228,7 @@
           }
         },
         "6a5ccda873f06065630d61b0": {
+          "name": "Geheime Nachricht",
           "objectives": {
             "6a5ccda873f06065630d61b2": {
               "description": "Eliminiere ein beliebiges Ziel mit Kopfschüssen, während du eine 12ga-Schrotflinte auf Streets of Tarkov benutzt"
@@ -9618,6 +9619,314 @@
               "description": "Eliminiere PMCs auf Factory zur Tageszeit"
             }
           }
+        },
+        "673f4e956f1b89c7bc0f56ef": {
+          "objectives": {
+            "673f5065cdfe082966842575": {
+              "description": "Schließe das Hauptziel so schnell wie möglich ab"
+            }
+          }
+        },
+        "6a5cd2178fd7c2b201032f3f": {
+          "name": "Vorführmodell",
+          "objectives": {
+            "6a5cd2178fd7c2b201032f41": {
+              "description": "Eliminiere ein beliebiges Ziel mit Kopfschüssen, während du 7,62x51-Sturmgewehre oder Präzisionsgewehre auf Reserve benutzt"
+            }
+          }
+        },
+        "5ede55112c95834b583f052a": {
+          "name": "Der Bunker",
+          "objectives": {
+            "6a5f419a91369c05ae763827": {
+              "description": "Lokalisiere die hermetische Tür, die zum Krankenhaus führt (Weißer Läufer)"
+            },
+            "6a5f419cca7ba5dbb6dfec49": {
+              "description": "Lokalisiere eine der beiden hermetischen Türen, die zum Gebäude der Akademie führen (Schwarzer Läufer)"
+            },
+            "6a5f419eae9bbeb8ca0c46d0": {
+              "description": "Lokalisiere eine der beiden hermetischen Türen, die zur Baracke #1 führen (Schwarzer Bauer)"
+            },
+            "6a5f41a021f78bafb63c3d47": {
+              "description": "Lokalisiere eine der beiden hermetischen Türen, die zur Baracke #2 führen (Weißer Bauer)"
+            },
+            "6a5f41bf54a91e0d977db806": {
+              "description": "Lokalisiere die hermetische Tür, die zum Gebäude des Luftkontrollzentrums führt (König)"
+            }
+          }
+        },
+        "6a5c1578f2689567c30eb0f3": {
+          "name": "Wandern"
+        },
+        "59ca1a6286f774509a270942": {
+          "objectives": {
+            "6a5f44d815430d6a5b5161b1": {
+              "description": "Eliminiere ein beliebiges Ziel mit einem GP-25-Granatwerfer"
+            }
+          }
+        },
+        "61958c366726521dd96828ec": {
+          "objectives": {
+            "6a5cd57d36c4fb654692787c": {
+              "description": "Eliminiere ein beliebiges Ziel mit einem M203-Granatwerfer auf Lighthouse oder Reserve"
+            }
+          }
+        },
+        "5a27bc8586f7741b543d8ea4": {
+          "objectives": {
+            "6a5dea83a4dd339f77be89eb": {
+              "description": "Eliminiere ein beliebiges Ziel mit einem beliebigen 7,62x51-Präzisionsgewehr aus über 50 Meter Entfernung auf Shoreline oder Lighthouse"
+            }
+          }
+        },
+        "5c0d4e61d09282029f53920e": {
+          "objectives": {
+            "6a5cdc97790159682d2bc19e": {
+              "description": "Eliminiere ein beliebiges Ziel"
+            }
+          }
+        },
+        "5a03296886f774569778596a": {
+          "objectives": {
+            "6a5cd11e5cf929b0f5d76816": {
+              "description": "Übergib den im Raid gefundenen Gegenstand: Metall-Kraftstofftank oder Kraftstoffbehälter für Expeditionen"
+            }
+          }
+        },
+        "6179aff8f57fb279792c60a1": {
+          "objectives": {
+            "6a5cd4d03a5504087ed636d3": {
+              "description": "Übergib den im Raid gefundenen Gegenstand: Topographische Übersichtskarten, Ordner mit Informationen oder TerraGroups „Blaue Ordner“"
+            }
+          }
+        },
+        "5edab4b1218d181e29451435": {
+          "objectives": {
+            "6a5ffd702c6091f279537d66": {
+              "description": "Übergib die im Raid gefundene Tasche von Sanitar"
+            }
+          }
+        },
+        "5a27bafb86f7741c73584017": {
+          "objectives": {
+            "6a5c10e883a51e292d11b976": {
+              "description": "Verstaue einen Wellschlauch im Labor in Customs"
+            }
+          }
+        },
+        "5a27bb3d86f77411ea361a21": {
+          "objectives": {
+            "6a5cd1942858d1ede4317068": {
+              "description": "Lokalisiere die versteckte TerraGroup-Fracht im Resort auf Shoreline"
+            }
+          }
+        },
+        "5a27bc1586f7741f6d40fa2f": {
+          "objectives": {
+            "6a5de9b9fee6abb95244f018": {
+              "description": "Markiere Artyoms Auto mit einem MS2000 Marker"
+            }
+          }
+        },
+        "626bdcc3a371ee3a7a3514c5": {
+          "objectives": {
+            "626c317e05f287031503c7fd": {
+              "description": "Finde und eliminiere Knight (in einem Raid)"
+            },
+            "626c318147ea7f506e5493c7": {
+              "description": "Finde und eliminiere Big Pipe (in einem Raid)"
+            },
+            "626c3183af14a41d9a1f4ea7": {
+              "description": "Finde und eliminiere Birdeye (in einem Raid)"
+            }
+          }
+        },
+        "5d25e2c386f77443e7549029": {
+          "objectives": {
+            "5d26fd8886f77469f0445745": {
+              "description": "Finde und eliminiere Reshala"
+            }
+          }
+        },
+        "60e71c11d54b755a3b53eb65": {
+          "objectives": {
+            "6a5abd63b45ef5b1a87b8273": {
+              "description": "Finde und eliminiere die vermummten Männer"
+            }
+          }
+        },
+        "69ce1cfb298a6529b30d712b": {
+          "objectives": {
+            "69ce1cfb298a6529b30d712d": {
+              "description": "Finde und eliminiere den Trupp von The Wedge"
+            }
+          }
+        },
+        "66058cb22cee99303f1ba067": {
+          "objectives": {
+            "6606b709f7ce34bb26221cab": {
+              "description": "Platziere das Arena-Werbeplakat in den Wohnquartieren der Scavbasis in Customs"
+            }
+          }
+        },
+        "6834145ebc1f443d7603c8a7": {
+          "name": "Leicht verdientes Geld - Teil 1 [PVE ZONE]",
+          "objectives": {
+            "6834145ebc1f443d7603c8ab": {
+              "description": "Platziere das Arena-Werbeplakat in den Wohnquartieren der Scavbasis in Customs"
+            }
+          }
+        },
+        "6834158f2f0e2a7eb90b62c8": {
+          "name": "Leicht verdientes Geld - Teil 2 [PVE ZONE]",
+          "objectives": {
+            "6834158f2f0e2a7eb90b62cc": {
+              "description": "Übergib im Raid gefundene Gegenstände aus der Lebensmittel-Kategorie"
+            }
+          }
+        },
+        "68341846186efa3c5b07f989": {
+          "name": "Balancing - Teil 1 [PVE ZONE]"
+        },
+        "68341a0b2f0e2a7eb90b62d4": {
+          "name": "Balancing - Teil 2 [PVE ZONE]"
+        },
+        "68341b407559f4e6d50bc0ce": {
+          "name": "Überraschung [PVE ZONE]"
+        },
+        "68341c4babec72d95d0c1260": {
+          "name": "Ablenkungsmanöver - Teil 1 [PVE ZONE]"
+        },
+        "68341d7d7559f4e6d50bc0db": {
+          "name": "Ablenkungsmanöver - Teil 2 [PVE ZONE]"
+        },
+        "68341eb25619c8e2a9031501": {
+          "name": "Auf zu großen Höhen! - Teil 1 [PVE ZONE]"
+        },
+        "68341f6fe2e7ef70a3060a0a": {
+          "name": "Auf zu großen Höhen! - Teil 2 [PVE ZONE]"
+        },
+        "6834202a186efa3c5b07f9a2": {
+          "name": "Auf zu großen Höhen! - Teil 3 [PVE ZONE]",
+          "objectives": {
+            "6834202a186efa3c5b07f9a5": {
+              "description": "Gewinne 2 Matches und erreiche dabei mindestens den 3. Platz im TeamFight-, BlastGang- oder CheckPoint-Modus in Arena"
+            }
+          }
+        },
+        "683421515619c8e2a9031511": {
+          "name": "Auf zu großen Höhen! - Teil 4 [PVE ZONE]",
+          "objectives": {
+            "683421515619c8e2a9031514": {
+              "description": "Übergebe Rubel aus deinem EFT-Versteck"
+            }
+          }
+        },
+        "68342265a8d674b5740b31f0": {
+          "name": "Auf zu großen Höhen! - Teil 5 [PVE ZONE]",
+          "objectives": {
+            "6978a3305f21afb01d7e0c53": {
+              "description": "Gewinne ein Match und erreiche dabei mit deinem Team mindestens den 2. Platz im TeamFight-, BlastGang- oder CheckPoint-Modus"
+            }
+          }
+        },
+        "6834233fecd5cf3a440d855b": {
+          "name": "Entgegen jeglichen Gewissens - Teil 1 [PVE ZONE]",
+          "objectives": {
+            "6834233fecd5cf3a440d8561": {
+              "description": "Finde heraus, was mit dem Champion passiert ist"
+            },
+            "6834233fecd5cf3a440d8564": {
+              "description": "Überlebe und entkomme aus dem Bereich"
+            }
+          }
+        },
+        "68342446a8d674b5740b31fc": {
+          "name": "Entgegen jeglichen Gewissens - Teil 2 [PVE ZONE]"
+        },
+        "6834254f2f0e2a7eb90b62ef": {
+          "name": "Entscheidungen, Entscheidungen [PVE ZONE]",
+          "objectives": {
+            "6834254f2f0e2a7eb90b62f2": {
+              "description": "Übergib die gefundenen Informationen"
+            }
+          }
+        },
+        "683425dd8f5b18d29a05d9d1": {
+          "name": "Zwischen Zwei Feuern [PVE ZONE]",
+          "objectives": {
+            "683425dd8f5b18d29a05d9d4": {
+              "description": "Kehre zum Versteck des alten Champions auf Customs zurück"
+            },
+            "683425dd8f5b18d29a05d9d6": {
+              "description": "Finde kompromittierende Informationen über Ref"
+            },
+            "683425dd8f5b18d29a05d9d8": {
+              "description": "Übergib die gefundenen Informationen"
+            }
+          }
+        },
+        "69788d4e963f08d9140bce19": {
+          "name": "Professionelle Fitness - Teil 1 [PVE ZONE]",
+          "objectives": {
+            "69788d4e963f08d9140bce1c": {
+              "description": "Spiele ein Match im CheckPoint- oder Last Hero-Modus"
+            }
+          }
+        },
+        "697878057aa1273126030fb0": {
+          "name": "Arena-Geschäfte [PVE ZONE]",
+          "objectives": {
+            "69789903c30426685c9f3080": {
+              "description": "Schließe die Aufgabe Professionelle Fitness - Teil 2 ab"
+            },
+            "6978990cbe971818240c2d7f": {
+              "description": "Schließe die Aufgabe Auf zu großen Höhen! - Teil 6 ab"
+            },
+            "697899167ed646e5d6187fea": {
+              "description": "Schließe die Aufgabe Halte die Führung ab"
+            }
+          }
+        },
+        "69789660b2187365e70bb94a": {
+          "name": "Halte die Führung [PVE ZONE]",
+          "objectives": {
+            "69789660b2187365e70bb94d": {
+              "description": "Eliminiere Gegner in Arena"
+            }
+          }
+        },
+        "6978907718bd6d7cbd0e8b8e": {
+          "name": "Professionelle Fitness - Teil 2 [PVE ZONE]",
+          "objectives": {
+            "6978907718bd6d7cbd0e8b91": {
+              "description": "Eliminiere Gegner in Arena"
+            }
+          }
+        },
+        "697895277d31587eab080266": {
+          "name": "Auf zu großen Höhen! - Teil 6 [PVE ZONE]",
+          "objectives": {
+            "6978a2bc18130b67d9156d7a": {
+              "description": "Gewinne zwei Matches in Folge im TeamFight-, BlastGang- oder CheckPoint-Modus in Arena"
+            }
+          }
+        }
+      },
+      "storyChapters": {
+        "accidental-witness": {
+          "objectives": {
+            "68f3c51a829dc8fbee1f3651": {
+              "description": "Finde und eliminiere Reshala"
+            }
+          }
+        },
+        "they-are-already-here": {
+          "objectives": {
+            "68589307a77e480f775134e1": {
+              "description": "Finde und eliminiere den Kultisten-Priester"
+            }
+          }
         }
       }
     },
@@ -9640,7 +9949,7 @@
   },
   "$meta": {
     "version": "1.93",
-    "generated": "2026-09-16T06:47:00.290Z",
-    "sha256": "be0827bc9fbab2dc943a6994e38cfc2fa71c9ef0c6caa1253f784b80b63b0ac1"
+    "generated": "2026-09-16T08:22:50.348Z",
+    "sha256": "e657f9c66cdaed40ea14efbe47e0cb5edad4ca3bf481725a8290fd88c9df81a1"
   }
 }
