@@ -76,7 +76,6 @@ import {
   type GameMode,
   type ValidationResult,
   type ValidationDetail,
-  type LocaleBundle,
   type LocaleOverlay,
   type LocaleValidationResult,
   type LocaleVerdict,
@@ -667,10 +666,9 @@ async function checkLocaleOverrides(): Promise<number> {
   let stale = 0;
   for (const locale of locales) {
     printProgress(`Fetching ${locale} locale bundles from tarkov.dev...`);
-    const bundles: LocaleBundle[] = [];
-    for (const mode of SUPPORTED_GAME_MODES) {
-      bundles.push(await fetchLocaleBundle(mode, locale));
-    }
+    const bundles = await Promise.all(
+      SUPPORTED_GAME_MODES.map((mode) => fetchLocaleBundle(mode, locale))
+    );
     printSuccess(`Fetched ${locale} bundle for ${SUPPORTED_GAME_MODES.length} mode(s)\n`);
 
     const results = validateLocaleOverrides(
