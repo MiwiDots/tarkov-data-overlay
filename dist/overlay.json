@@ -9639,8 +9639,8 @@
     }
   },
   "$meta": {
-    "version": "1.92",
-    "generated": "2026-09-16T03:17:43.522Z",
-    "sha256": "7096aa80bb3c23fbfb94b9f8f667ec9695c97518da9757ddb6a3e1e0db00b670"
+    "version": "1.93",
+    "generated": "2026-09-16T06:47:00.290Z",
+    "sha256": "be0827bc9fbab2dc943a6994e38cfc2fa71c9ef0c6caa1253f784b80b63b0ac1"
   }
 }
