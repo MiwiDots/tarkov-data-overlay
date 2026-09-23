@@ -9930,8 +9930,8 @@
     }
   },
   "$meta": {
-    "version": "1.98",
-    "generated": "2026-09-23T20:14:12.492Z",
-    "sha256": "c048e1ed80f885b420ddbab2f42fd5dcc9bbaad93b9ea28dac7f0fefab1ca1ec"
+    "version": "1.99",
+    "generated": "2026-09-23T20:19:33.985Z",
+    "sha256": "c5538103189ce8717a7292492fef46a15b59bcca236e2c41a28454b16c106ad5"
   }
 }
